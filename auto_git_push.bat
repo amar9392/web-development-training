@@ -38,9 +38,18 @@ default-character-set=utf8
 @echo off
 cd /d "D:\web development training"
 
+echo Adding changes...
 git add .
-git commit -m "Auto update: %date% %time%"
+
+echo Committing...
+git commit -m "Auto commit - %date% %time%"
+
+echo Pushing to GitHub...
 git push origin main
+
+echo Done!
+pause
+
 
 innodb_force_recovery = 1
 
